@@ -2,6 +2,7 @@ import React from 'react'
 import { Route, Routes, BrowserRouter as Router } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import{ Home, About, Projects, Contact} from './pages'
+import Footer from './components/Footer';
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
                 <Route path='/contact' element={<Contact />}/>
             </Routes>
         </Router>
+        <Footer />
     </main>
   )
 }
